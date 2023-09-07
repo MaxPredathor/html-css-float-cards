@@ -12,19 +12,29 @@
 }
 .debug{
     border: 3px solid black;
-    padding: 10px;
 }
-/* .container::after{
+.clearfix::after{
     clear: both;
     content: "";
     display: table;
-} */
+}
 .cards{
     float: left;
     width: calc(100% / 3);
 }
-.clearfix{
-    clear: both;
-    content: "";
-    display: table;
+.profile-pic{
+    height: 150px;
+    width: 25%;
+    display: inline-block;
+    background-image: url(/img/male1.png);
+    float: left;
+    border: 2px solid red;
+}
+.description{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    float: left;
+    width: 100%;
+    border: 2px solid green;
 }
