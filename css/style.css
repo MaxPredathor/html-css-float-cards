@@ -11,7 +11,7 @@
     width: 100%;
 }
 .debug{
-    border: 3px solid black;
+    border: 2px solid black;
 }
 .clearfix::after{
     clear: both;
@@ -21,20 +21,24 @@
 .cards{
     float: left;
     width: calc(100% / 3);
+    height: 100%;
 }
 .profile-pic{
-    height: 150px;
-    width: 25%;
+    height: 120px;
+    width: 120px;
     display: inline-block;
-    background-image: url(/img/male1.png);
     float: left;
-    border: 2px solid red;
+}
+.profile-pic > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .description{
     display: inline-block;
     background-color: black;
     color: white;
+    width: calc(100% - 120px);
+    height: 120px;
     float: left;
-    width: 100%;
-    border: 2px solid green;
 }
