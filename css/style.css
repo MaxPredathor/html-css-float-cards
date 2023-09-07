@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+}
+.debug{
+    border: 3px solid black;
+    padding: 10px;
+}
+/* .container::after{
+    clear: both;
+    content: "";
+    display: table;
+} */
+.cards{
+    float: left;
+    width: calc(100% / 3);
+}
+.clearfix{
+    clear: both;
+    content: "";
+    display: table;
+}
