@@ -3,12 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: Acme;
+    src: url(/Font/Acme-Regular.ttf);
+}
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
+    font-family: Acme;
+}
+.head > h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(229, 49, 112);
+    margin: 50px 0;
+}
+.head > p{
+    text-align: center;
 }
 .container{
     width: 100%;
+    margin: 50px 0;
 }
 .debug{
     border: 2px solid black;
@@ -22,10 +37,14 @@
     float: left;
     width: calc(100% / 3);
     height: 100%;
+    margin-bottom: 40px;
+}
+article:nth-child(1n +2){
+    color: red;
 }
 .profile-pic{
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
     display: inline-block;
     float: left;
 }
@@ -38,7 +57,10 @@
     display: inline-block;
     background-color: black;
     color: white;
-    width: calc(100% - 120px);
-    height: 120px;
+    width: calc(100% - 130px);
+    height: 130px;
     float: left;
+}
+.description > h2,p,a{
+    padding: 10px;
 }
